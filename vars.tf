@@ -14,7 +14,7 @@ variable "tags" {
   default = {
     Name = "fiap-terraform-aula",
     School = "FIAP",
-    Environment = "Development",
+    Environment = "Production",
     Year = "2025"
   }
 }
