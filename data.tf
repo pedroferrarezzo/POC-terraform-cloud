@@ -1,5 +1,5 @@
 data "aws_iam_user" "principal_user" {
-  user_name = "11soat-tf"
+  user_name = "10soat"
 }
 
 data "aws_eks_cluster" "cluster" {
