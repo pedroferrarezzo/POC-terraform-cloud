@@ -1,5 +1,5 @@
-data "aws_iam_user" "principal_user" {
-  user_name = "10soat"
+data "aws_iam_role" "principal_role" {
+  name = "LabRole"
 }
 
 data "aws_eks_cluster" "cluster" {
