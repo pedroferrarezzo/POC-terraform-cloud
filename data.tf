@@ -1,5 +1,5 @@
 data "aws_iam_role" "principal_role" {
-  name = "LabRole"
+  name =  "voclabs"
 }
 
 data "aws_eks_cluster" "cluster" {
