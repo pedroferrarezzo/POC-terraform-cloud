@@ -1,9 +1,9 @@
 terraform {
   cloud {
-    organization = "soat-tf"
+    organization = "FIAP-SOAT11"
 
     workspaces {
-      name = "production"
+      name = "Production"
     }
   }
 }
