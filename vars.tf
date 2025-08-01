@@ -22,3 +22,7 @@ variable "tags" {
 variable "instance_type" {
   default = "t3.medium"
 }
+
+variable "principalRoleArn" {
+  default = "arn:aws:iam::438363040596:role/voclabs"
+}

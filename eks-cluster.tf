@@ -5,7 +5,7 @@ resource "aws_eks_cluster" "cluster" {
     authentication_mode = "API"
   }
 
-  role_arn = data.aws_iam_role.principal_role.arn
+  role_arn = var.principalRoleArn
   version  = "1.31"
 
   vpc_config {
