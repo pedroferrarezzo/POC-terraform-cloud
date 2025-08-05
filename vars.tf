@@ -24,5 +24,13 @@ variable "instance_type" {
 }
 
 variable "principalRoleArn" {
-  default = "arn:aws:iam::438363040596:role/voclabs"
+  default = "arn:aws:iam::${data.aws_caller_identity.current.account_id}:role/voclabs"
+}
+
+variable "labRoleArn" {
+  default = "arn:aws:iam::${data.aws_caller_identity.current.account_id}:role/LabRole"
+}
+
+variable "eksClusterAdminPolicyArn" {
+  default = "arn:aws:eks::aws:cluster-access-policy/AmazonEKSClusterAdminPolicy"
 }

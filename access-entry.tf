@@ -7,7 +7,7 @@ resource "aws_eks_access_entry" "access_entry" {
 
 resource "aws_eks_access_policy_association" "access_entry_association" {
   cluster_name  = aws_eks_cluster.cluster.name
-  policy_arn    = "arn:aws:eks::aws:cluster-access-policy/AmazonEKSClusterAdminPolicy"
+  policy_arn    = var.eksClusterAdminPolicyArn
   principal_arn = var.principalRoleArn
 
   access_scope {
