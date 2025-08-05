@@ -1,6 +1,8 @@
+# https://docs.aws.amazon.com/pt_br/eks/latest/best-practices/load-balancing.html
+# AWS Elastic Load Balancing target-type = Instance
 resource "aws_security_group" "sg" {
     name = "${var.projectName}-sg"
-    description = "Usado para expor services na internet"
+    description = "Usado para controlar acesso ao node group do EKS"
     vpc_id = aws_vpc.vpc_fiap.id
 
     ingress {
