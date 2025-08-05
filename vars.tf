@@ -23,14 +23,6 @@ variable "instance_type" {
   default = "t3.medium"
 }
 
-variable "principalRoleArn" {
-  default = "arn:aws:iam::${data.aws_caller_identity.current.account_id}:role/voclabs"
-}
-
-variable "labRoleArn" {
-  default = "arn:aws:iam::${data.aws_caller_identity.current.account_id}:role/LabRole"
-}
-
 variable "eksClusterAdminPolicyArn" {
   default = "arn:aws:eks::aws:cluster-access-policy/AmazonEKSClusterAdminPolicy"
 }
